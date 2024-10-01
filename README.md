@@ -25,7 +25,7 @@ Github repo: [https://github.com/deepjoshi1/berkeley_ai_ml_assignment_mod5_coupo
     * [Coupon type: Carry out & Take away](#coupon-type-carry-out-&-take-away)
        * [Conclusion](#Conclusion3.1)
 
-# Introduction < a name='introduction'/>
+# Introduction <a name="introduction"></a>
 
 This analysis explores whether customers will accept coupons in various driving scenarios. The study uses data from a survey conducted on Amazon Mechanical Turk, where participants were presented with different driving situations and asked if they would accept a coupon. The survey considered factors such as destination, time of day, weather, and passenger.   
 
@@ -43,15 +43,14 @@ they will accept the coupon if they are the driver. There are three possible ans
 
 The first two responses are labeled as “Y = 1,” and the third is labeled as “Y = 0.” There are five different types of coupons: Less expensive restaurants (under $20), coffee houses, carryout and takeaway, bars, and more expensive restaurants ($20–$50).
 
-<div id='analysis'/>
-# Analysis
+# Analysis <a name="analysis"></a>
 
 The analysis uses Python with the pandas, Matplotlib, and Seaborn libraries to process and visualize the survey data. After cleaning the data by handling missing values, the analysis focuses on different coupon types and identifies key demographic and situational factors that correlate with higher acceptance rates.
 
 This information can be valuable for businesses seeking to optimize their coupon distribution strategies by targeting specific customer segments and scenarios for maximum impact.
 
-<div id='understanding-data'/>
-## Understanding Data
+
+## Understanding Data <a name="understanding-data"></a>
 
 
 
@@ -70,8 +69,7 @@ data.isnull().mean() * 100
 
 It clearly shows that the car is missing values in 99% cases so it makes sense to drop this column and fill the rest missing categorical values with the mode.
 
-<div id='coupon-types'/>
-## Coupon Types
+## Coupon Types <a name="coupon-types"></a>
 
 There are 5 types of coupons with the following count and accepted count
 
@@ -143,8 +141,7 @@ There are 5 types of coupons with the following count and accepted count
 ![alt_text](images/image1.png "image_tooltip")
 
 
-<div id='coupon-type-bar'/>
-## Coupon type: Bar
+## Coupon type: Bar <a name="coupon-type-bar"></a>
 
 Dataframe is filtered for coupon type “Bar” for this analysis and stored in variable bar_coupons.
 
