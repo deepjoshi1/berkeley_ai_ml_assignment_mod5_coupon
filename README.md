@@ -11,27 +11,26 @@ Github repo: [https://github.com/deepjoshi1/berkeley_ai_ml_assignment_mod5_coupo
 * Data set:  **data/coupons.csv**
 
 # Table of contents
-* [Introduction] (#introduction)
-* [Data Description] (#data-description)
+* [Introduction](#introduction)
+* [Data Description](#data-description)
 * [Analysis](#analysis)
-    * [Understanding Data] (#understanding-data)
-    * [Coupon Types] (#coupon-types)
-    * [Coupon type: Bar] (#coupon-type-bar)
-       * [Conclusion] (#conclusion1.1)
-    * [Coupon type: Restaurant(&lt;20] (#coupon-type-restaurant-<20)
-       * [Conclusion] (#Conclusion2.1)
-    * [Coupon type: Coffee House] (#coupon-type-coffee-house)
-       * [Conclusion] (#Conclusion3.1)
-    * [Coupon type: Carry out & Take away] (#coupon-type-carry-out-&-take-away)
-       * [Conclusion] (#Conclusion3.1)
+    * [Understanding Data](#understanding-data)
+    * [Coupon Types](#coupon-types)
+    * [Coupon type: Bar](#coupon-type-bar)
+       * [Conclusion](#conclusion1.1)
+    * [Coupon type: Restaurant(&lt;20](#coupon-type-restaurant-<20)
+       * [Conclusion](#Conclusion2.1)
+    * [Coupon type: Coffee House](#coupon-type-coffee-house)
+       * [Conclusion](#Conclusion3.1)
+    * [Coupon type: Carry out & Take away](#coupon-type-carry-out-&-take-away)
+       * [Conclusion](#Conclusion3.1)
 
-# Introduction {#introduction}
+# Introduction <a name="introduction"></a>
 
 This analysis explores whether customers will accept coupons in various driving scenarios. The study uses data from a survey conducted on Amazon Mechanical Turk, where participants were presented with different driving situations and asked if they would accept a coupon. The survey considered factors such as destination, time of day, weather, and passenger.   
 
-
-# Data Description {#data-description}
-
+<div id='data-description'/>
+# Data Description
 This data is from the UCI Machine Learning Repository and was collected via a survey on Amazon Mechanical Turk. The survey describes different driving scenarios, including the destination, current time, weather, and passenger, and then asks people whether
 
 they will accept the coupon if they are the driver. There are three possible answers people can choose from:
@@ -44,15 +43,14 @@ they will accept the coupon if they are the driver. There are three possible ans
 
 The first two responses are labeled as “Y = 1,” and the third is labeled as “Y = 0.” There are five different types of coupons: Less expensive restaurants (under $20), coffee houses, carryout and takeaway, bars, and more expensive restaurants ($20–$50).
 
-
-# Analysis  {#analysis}
+# Analysis <a name="analysis"></a>
 
 The analysis uses Python with the pandas, Matplotlib, and Seaborn libraries to process and visualize the survey data. After cleaning the data by handling missing values, the analysis focuses on different coupon types and identifies key demographic and situational factors that correlate with higher acceptance rates.
 
 This information can be valuable for businesses seeking to optimize their coupon distribution strategies by targeting specific customer segments and scenarios for maximum impact.
 
 
-## Understanding Data {#understanding-data}
+## Understanding Data <a name="understanding-data"></a>
 
 
 
@@ -71,8 +69,7 @@ data.isnull().mean() * 100
 
 It clearly shows that the car is missing values in 99% cases so it makes sense to drop this column and fill the rest missing categorical values with the mode.
 
-
-## Coupon Types {#coupon-types}
+## Coupon Types <a name="coupon-types"></a>
 
 There are 5 types of coupons with the following count and accepted count
 
@@ -144,8 +141,7 @@ There are 5 types of coupons with the following count and accepted count
 ![alt_text](images/image1.png "image_tooltip")
 
 
-
-## Coupon type: Bar {#coupon-type-bar}
+## Coupon type: Bar <a name="coupon-type-bar"></a>
 
 Dataframe is filtered for coupon type “Bar” for this analysis and stored in variable bar_coupons.
 
@@ -174,8 +170,7 @@ Acceptance rate for drivers, go to bars more than once a month and are under the
 * Acceptance rate for drivers, go to bars more than once a month and are under the age of 30:  72.17%
 * Acceptance rate for drivers, go to cheap restaurants more than 4 times a month and income is less than 50K:  45.35
 
-
-### Conclusion {#conclusion1.1}
+### Conclusion <a name="conclusion1.1"></a>
 
 
 
@@ -184,36 +179,33 @@ Acceptance rate for drivers, go to bars more than once a month and are under the
 
 This hypothesis suggests that targeting ride-sharing coupons towards drivers who frequent bars, particularly those under 30 and those who are not transporting children, could result in higher acceptance and usage rates.
 
-
-## Coupon type: Restaurant(&lt;20) {#coupon-type-restaurant-<20}
+## Coupon type: Restaurant(&lt;20) <a name="coupon-type-restaurant-"></a>
 
 * Drivers with age under 30 has acceptance rate of:  73.61 %
 
 * Drivers with age above 30 has acceptance rate of:  68.32 %
 
-### Conclusion  {#Conclusion2.1}
+### Conclusion <a name="Conclusion2.1"></a>
 
 To achieve the highest acceptance rate for "Restaurant(&lt;20)" coupons, it's optimal to offer them to drivers under age 30.
 
-
-## Coupon type: Coffee House {#coupon-type-coffee-house}
+## Coupon type: Coffee House <a name="coupon-type-coffee-house"></a>
 
 ![alt_text](images/image4.png "image_tooltip")
 
 
-### Conclusion {#conclusion3.1}
+### Conclusion <a name="conclusion3.1"></a>
 
 To maximize the acceptance rate for "Coffee House" coupons, it's recommended to target drivers with a friend as a passenger, particularly around 7AM or 10AM or 2PM with friends. This specific scenario leads to a higher acceptance rate compared to other passenger combinations or times of the day.
 
-
-## Coupon type: Carry out & Take away {#coupon-type-carry-out-&-take-away}
-
+<div id='coupon-type-carry-out-&-take-away'/>
+## Coupon type: Carry out & Take away
 
 ![alt_text](images/image3.png "image_tooltip")
 
 
+### Conclusion a name="conclusion4.1"></a>
 
-### Conclusion {#conclusion4.1}
 
 To achieve the highest acceptance rate for "Carry out & Take away" coupons, it's optimal to offer them during lunch and dinner hours (2PM and 6PM).
 
