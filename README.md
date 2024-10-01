@@ -11,19 +11,19 @@ Github repo: [https://github.com/deepjoshi1/berkeley_ai_ml_assignment_mod5_coupo
 * Data set:  **data/coupons.csv**
 
 # Table of contents
-* [Introduction] (#introduction)
-* [Data Description] (#data-description)
+* [Introduction](#introduction)
+* [Data Description](#data-description)
 * [Analysis](#analysis)
-    * [Understanding Data] (#understanding-data)
-    * [Coupon Types] (#coupon-types)
-    * [Coupon type: Bar] (#coupon-type-bar)
-       * [Conclusion] (#conclusion1.1)
-    * [Coupon type: Restaurant(&lt;20] (#coupon-type-restaurant-<20)
-       * [Conclusion] (#Conclusion2.1)
-    * [Coupon type: Coffee House] (#coupon-type-coffee-house)
-       * [Conclusion] (#Conclusion3.1)
-    * [Coupon type: Carry out & Take away] (#coupon-type-carry-out-&-take-away)
-       * [Conclusion] (#Conclusion3.1)
+    * [Understanding Data](#understanding-data)
+    * [Coupon Types](#coupon-types)
+    * [Coupon type: Bar](#coupon-type-bar)
+       * [Conclusion](#conclusion1.1)
+    * [Coupon type: Restaurant(&lt;20](#coupon-type-restaurant-<20)
+       * [Conclusion](#Conclusion2.1)
+    * [Coupon type: Coffee House](#coupon-type-coffee-house)
+       * [Conclusion](#Conclusion3.1)
+    * [Coupon type: Carry out & Take away](#coupon-type-carry-out-&-take-away)
+       * [Conclusion](#Conclusion3.1)
 
 <div id='introduction'/>
 # Introduction
