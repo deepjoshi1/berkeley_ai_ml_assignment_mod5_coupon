@@ -10,6 +10,20 @@ Github repo: [https://github.com/deepjoshi1/berkeley_ai_ml_assignment_mod5_coupo
 * Notebook: **customer_and_coupon.ipynb**
 * Data set:  **data/coupons.csv**
 
+# Table of contents
+* [Introduction] (#introduction)
+* [Data Description] (#data-description)
+* [Analysis](#analysis)
+    * [Understanding Data] (#understanding-data)
+    * [Coupon Types] (#coupon-types)
+    * [Coupon type: Bar] (#coupon-type-bar)
+       * [Conclusion] (#conclusion1.1)
+    * [Coupon type: Restaurant(&lt;20] (#coupon-type-restaurant-<20)
+       * [Conclusion] (#Conclusion2.1)
+    * [Coupon type: Coffee House] (#coupon-type-coffee-house)
+       * [Conclusion] (#Conclusion3.1)
+    * [Coupon type: Carry out & Take away] (#coupon-type-carry-out-&-take-away)
+       * [Conclusion] (#Conclusion3.1)
 
 # Introduction {#introduction}
 
@@ -42,22 +56,17 @@ This information can be valuable for businesses seeking to optimize their coupon
 
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](images/image2.png "image_tooltip")
 
 
 Using the info() method of dataframe shows a few columns such as Bar, CoffeeHouse are missing some values but column cars are missing lots of values. To Get another perspective of msising data let’s further check the missing values in %. 
 
+```
 data.isnull().mean() * 100
+```
 
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](images/image5.png "image_tooltip")
 
 
 It clearly shows that the car is missing values in 99% cases so it makes sense to drop this column and fill the rest missing categorical values with the mode.
@@ -132,13 +141,7 @@ There are 5 types of coupons with the following count and accepted count
 </table>
 
 
-
-## 
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](images/image1.png "image_tooltip")
 
 
 
@@ -172,7 +175,7 @@ Acceptance rate for drivers, go to bars more than once a month and are under the
 * Acceptance rate for drivers, go to cheap restaurants more than 4 times a month and income is less than 50K:  45.35
 
 
-### Conclusion {#conclusion}
+### Conclusion {#conclusion1.1}
 
 
 
@@ -184,27 +187,21 @@ This hypothesis suggests that targeting ride-sharing coupons towards drivers who
 
 ## Coupon type: Restaurant(&lt;20) {#coupon-type-restaurant-<20}
 
-Drivers with age under 30 has acceptance rate of:  73.61 %
+* Drivers with age under 30 has acceptance rate of:  73.61 %
 
-Drivers with age above 30 has acceptance rate of:  68.32 %
+* Drivers with age above 30 has acceptance rate of:  68.32 %
 
-Conclusion 
+### Conclusion  {#Conclusion2.1}
 
 To achieve the highest acceptance rate for "Restaurant(&lt;20)" coupons, it's optimal to offer them to drivers under age 30.
 
 
 ## Coupon type: Coffee House {#coupon-type-coffee-house}
 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image4.png "image_tooltip")
 
 
-
-### Conclusion {#conclusion}
+### Conclusion {#conclusion3.1}
 
 To maximize the acceptance rate for "Coffee House" coupons, it's recommended to target drivers with a friend as a passenger, particularly around 7AM or 10AM or 2PM with friends. This specific scenario leads to a higher acceptance rate compared to other passenger combinations or times of the day.
 
@@ -212,15 +209,11 @@ To maximize the acceptance rate for "Coffee House" coupons, it's recommended to 
 ## Coupon type: Carry out & Take away {#coupon-type-carry-out-&-take-away}
 
 
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
+![alt_text](images/image3.png "image_tooltip")
 
 
 
-### Conclusion {#conclusion}
+### Conclusion {#conclusion4.1}
 
 To achieve the highest acceptance rate for "Carry out & Take away" coupons, it's optimal to offer them during lunch and dinner hours (2PM and 6PM).
 
