@@ -25,8 +25,7 @@ Github repo: [https://github.com/deepjoshi1/berkeley_ai_ml_assignment_mod5_coupo
     * [Coupon type: Carry out & Take away](#coupon-type-carry-out-&-take-away)
        * [Conclusion](#Conclusion3.1)
 
-<div id='introduction'/>
-# Introduction
+# Introduction < a name=='introduction'/>
 
 This analysis explores whether customers will accept coupons in various driving scenarios. The study uses data from a survey conducted on Amazon Mechanical Turk, where participants were presented with different driving situations and asked if they would accept a coupon. The survey considered factors such as destination, time of day, weather, and passenger.   
 
