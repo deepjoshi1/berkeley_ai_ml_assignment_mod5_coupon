@@ -1,179 +1,271 @@
----
-title: "[]{#_lywijnrmk675 .anchor}Will the Customer Accept the Coupon?"
----
+<!-----
+
+You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see useful information and inline alerts.
+* ERRORs: 0
+* WARNINGs: 0
+* ALERTS: 5
+
+Conversion time: 1.591 seconds.
+
+
+Using this Markdown file:
+
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β39
+* Tue Oct 01 2024 13:25:52 GMT-0700 (PDT)
+* Source doc: Will the Customer Accept the Coupon
+* This is a partial selection. Check to make sure intra-doc links work.
+* Tables are currently converted to HTML tables.
+* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
+
+
+WARNING:
+You have 3 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
+
+----->
+
+
+<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 5.</p>
+<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
+
+<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
+<a href="#gdcalert2">alert2</a>
+<a href="#gdcalert3">alert3</a>
+<a href="#gdcalert4">alert4</a>
+<a href="#gdcalert5">alert5</a>
+
+<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
+
+
+
+# Will the Customer Accept the Coupon?
 
 By: Deep Joshi
 
-Github repo: [[https://github.com/deepjoshi1/berkeley_ai_ml_assignment_mod5_coupon]{.underline}][1]
+Github repo: [https://github.com/deepjoshi1/berkeley_ai_ml_assignment_mod5_coupon](https://github.com/deepjoshi1/berkeley_ai_ml_assignment_mod5_coupon)
 
--   Notebook: **customer_and_coupon.ipynb**
 
--   Data set: **data/coupons.csv**
 
-[[Introduction]{.underline}][2]
+* Notebook: **customer_and_coupon.ipynb**
+* Data set:  **data/coupons.csv**
 
-[[Data Description]{.underline}][3]
 
-[[Analysis]{.underline}][4]
+# Introduction {#introduction}
 
-> [[Understanding Data]{.underline}][5]
->
-> [[Coupon Types]{.underline}][6]
->
-> [[Coupon type: Bar]{.underline}][7]
->
-> [[Conclusion]{.underline}][8]
->
-> [[Coupon type: Restaurant(\<20)]{.underline}][9]
->
-> [[Coupon type: Coffee House]{.underline}][10]
->
-> [[Conclusion]{.underline}][11]
->
-> [[Coupon type: Carry out & Take away]{.underline}][12]
->
-> [[Conclusion]{.underline}][13]
+This analysis explores whether customers will accept coupons in various driving scenarios. The study uses data from a survey conducted on Amazon Mechanical Turk, where participants were presented with different driving situations and asked if they would accept a coupon. The survey considered factors such as destination, time of day, weather, and passenger.   
 
-# Introduction
 
-This analysis explores whether customers will accept coupons in various driving scenarios. The study uses data from a survey conducted on Amazon Mechanical Turk, where participants were presented with different driving situations and asked if they would accept a coupon. The survey considered factors such as destination, time of day, weather, and passenger.
-
-# Data Description
+# Data Description {#data-description}
 
 This data is from the UCI Machine Learning Repository and was collected via a survey on Amazon Mechanical Turk. The survey describes different driving scenarios, including the destination, current time, weather, and passenger, and then asks people whether
 
 they will accept the coupon if they are the driver. There are three possible answers people can choose from:
 
--   "Right away"
 
--   "Later, before the coupon expires"
 
--   "No, I do not want the coupon"
+* “Right away”
+* “Later, before the coupon expires”
+* “No, I do not want the coupon”
 
-The first two responses are labeled as "Y = 1," and the third is labeled as "Y = 0." There are five different types of coupons: Less expensive restaurants (under \$20), coffee houses, carryout and takeaway, bars, and more expensive restaurants (\$20--\$50).
+The first two responses are labeled as “Y = 1,” and the third is labeled as “Y = 0.” There are five different types of coupons: Less expensive restaurants (under $20), coffee houses, carryout and takeaway, bars, and more expensive restaurants ($20–$50).
 
-# Analysis 
 
-[The analysis uses Python with the pandas, Matplotlib, and Seaborn libraries to process and visualize the survey data. After cleaning the data by handling missing values, the analysis focuses on different coupon types and identifies key demographic and situational factors that correlate with higher acceptance rates.]{.mark}
+# Analysis  {#analysis}
 
-[This information can be valuable for businesses seeking to optimize their coupon distribution strategies by targeting specific customer segments and scenarios for maximum impact.]{.mark}
+The analysis uses Python with the pandas, Matplotlib, and Seaborn libraries to process and visualize the survey data. After cleaning the data by handling missing values, the analysis focuses on different coupon types and identifies key demographic and situational factors that correlate with higher acceptance rates.
 
-## Understanding Data
+This information can be valuable for businesses seeking to optimize their coupon distribution strategies by targeting specific customer segments and scenarios for maximum impact.
 
-![][14]
 
-Using the info() method of dataframe shows a few columns such as Bar, CoffeeHouse are missing some values but column cars are missing lots of values. To Get another perspective of msising data let's further check the missing values in %.
+## Understanding Data {#understanding-data}
 
-data.isnull().mean() \* 100
 
-![][15]
 
-[It clearly shows that the car is missing values in 99% cases so it makes sense to drop this column and fill the rest missing categorical values with the mode.]{.mark}
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-## Coupon Types
+
+![alt_text](images/image1.png "image_tooltip")
+
+
+Using the info() method of dataframe shows a few columns such as Bar, CoffeeHouse are missing some values but column cars are missing lots of values. To Get another perspective of msising data let’s further check the missing values in %. 
+
+data.isnull().mean() * 100
+
+
+
+<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image2.png "image_tooltip")
+
+
+It clearly shows that the car is missing values in 99% cases so it makes sense to drop this column and fill the rest missing categorical values with the mode.
+
+
+## Coupon Types {#coupon-types}
 
 There are 5 types of coupons with the following count and accepted count
 
-  ------------------------------------------------------------------------------------------------------------------------
-  **[coupon]{.mark}**              **[total_count]{.mark}**   **[accepted_count]{.mark}**   **[acceptance_rate]{.mark}**
-  -------------------------------- -------------------------- ----------------------------- ------------------------------
-  [Coffee House]{.mark}            [3996]{.mark}              [1995]{.mark}                 [.499249]{.mark}
 
-  [Restaurant(\<20)]{.mark}        [2786]{.mark}              [1970]{.mark}                 [0.707107]{.mark}
+<table>
+  <tr>
+   <td><strong>coupon      </strong>
+   </td>
+   <td><strong>total_count    </strong>
+   </td>
+   <td><strong>accepted_count</strong>
+   </td>
+   <td><strong>acceptance_rate</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Coffee House 
+   </td>
+   <td> 3996 
+   </td>
+   <td>  1995
+   </td>
+   <td>.499249
+   </td>
+  </tr>
+  <tr>
+   <td>Restaurant(&lt;20)
+   </td>
+   <td>2786 
+   </td>
+   <td>1970
+   </td>
+   <td>0.707107
+   </td>
+  </tr>
+  <tr>
+   <td>Carry out & Take away 
+   </td>
+   <td>2393 
+   </td>
+   <td>1760
+   </td>
+   <td>0.735478
+   </td>
+  </tr>
+  <tr>
+   <td> Bar  
+   </td>
+   <td>2017
+   </td>
+   <td>658
+   </td>
+   <td>0.410015
+   </td>
+  </tr>
+  <tr>
+   <td> Restaurant(20-50)      
+   </td>
+   <td> 1492   
+   </td>
+   <td>1970
+   </td>
+   <td>0.441019
+   </td>
+  </tr>
+</table>
 
-  [Carry out & Take away]{.mark}   [2393]{.mark}              [1760]{.mark}                 [0.735478]{.mark}
 
-  [Bar]{.mark}                     [2017]{.mark}              [658]{.mark}                  [0.410015]{.mark}
-
-  [Restaurant(20-50)]{.mark}       [1492]{.mark}              [1970]{.mark}                 [0.441019]{.mark}
-  ------------------------------------------------------------------------------------------------------------------------
-
-## ![][16]
 
 ## 
 
-## Coupon type: Bar
+<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-Dataframe is filtered for coupon type "Bar" for this analysis and stored in variable bar_coupons.
+
+![alt_text](images/image3.png "image_tooltip")
+
+
+
+## Coupon type: Bar {#coupon-type-bar}
+
+Dataframe is filtered for coupon type “Bar” for this analysis and stored in variable bar_coupons.
 
 Compare the acceptance rate between those who went to a bar 3 or fewer times a month to those who went more.
 
--   Acceptance rate of those who went to a bar 3 or fewer times a month: 37.07%
 
--   Acceptance rate of those who went to a bar more than 3 times a month: 76.88%
+
+* Acceptance rate of those who went to a bar 3 or fewer times a month:  37.07%
+* Acceptance rate of those who went to a bar more than 3 times a month:  76.88%
 
 Compare the acceptance rate between drivers who go to a bar more than once a month and are over the age of 25 to all others. Is there a difference?
 
--   Acceptance rate between drivers who go to a bar more than once a month and are over the age of 25: 69.52%
 
--   Acceptance rate rest: 39.33%
 
--   Driver with age over 25 and and who go to bar more than once a month has acceptance rate difference: 30.19%
+* Acceptance rate between drivers who go to a bar more than once a month and are over the age of 25:  69.52%
+* Acceptance rate rest:  39.33%
+* Driver with age over 25 and and who go to bar more than once a month has acceptance rate difference:  30.19%
+* Acceptance rate for drivers, go to bars more than once a month, had passengers that were not a kid, and were not widowed:  71.32
 
-```{=html}
-<!-- -->
-```
--   Acceptance rate for drivers, go to bars more than once a month, had passengers that were not a kid, and were not widowed: 71.32
+Acceptance rate for drivers, go to bars more than once a month and are under the age of 30:  72.17%
 
-Acceptance rate for drivers, go to bars more than once a month and are under the age of 30: 72.17%
 
--   Acceptance rate for drivers, go to cheap restaurants more than 4 times a month and income is less than 50K: 45.35
 
--   Acceptance rate for drivers, go to bars more than once a month, had passengers that were not a kid, and were not widowed: 71.32
+* Acceptance rate for drivers, go to cheap restaurants more than 4 times a month and income is less than 50K:  45.35
+* Acceptance rate for drivers, go to bars more than once a month, had passengers that were not a kid, and were not widowed:  71.32
+* Acceptance rate for drivers, go to bars more than once a month and are under the age of 30:  72.17%
+* Acceptance rate for drivers, go to cheap restaurants more than 4 times a month and income is less than 50K:  45.35
 
--   Acceptance rate for drivers, go to bars more than once a month and are under the age of 30: 72.17%
 
--   Acceptance rate for drivers, go to cheap restaurants more than 4 times a month and income is less than 50K: 45.35
+### Conclusion {#conclusion}
 
-### Conclusion
 
--   **Data-driven observation:** The provided data shows a high acceptance rate (76.88%) for coupons among drivers who visit bars more than three times a month. This suggests a correlation between bar visits and coupon acceptance.
 
--   **Targeted demographic:** Furthermore, the data indicates that drivers under 30 who frequent bars exhibit a strong coupon acceptance rate (72.17%). This highlights a specific demographic (young, bar-going drivers) with a higher propensity for using coupons.
+* **Data-driven observation:** The provided data shows a high acceptance rate (76.88%) for coupons among drivers who visit bars more than three times a month. This suggests a correlation between bar visits and coupon acceptance.
+* **Targeted demographic:** Furthermore, the data indicates that drivers under 30 who frequent bars exhibit a strong coupon acceptance rate (72.17%). This highlights a specific demographic (young, bar-going drivers) with a higher propensity for using coupons.
 
-[This hypothesis suggests that targeting ride-sharing coupons towards drivers who frequent bars, particularly those under 30 and those who are not transporting children, could result in higher acceptance and usage rates.]{.mark}
+This hypothesis suggests that targeting ride-sharing coupons towards drivers who frequent bars, particularly those under 30 and those who are not transporting children, could result in higher acceptance and usage rates.
 
-## Coupon type: Restaurant(\<20)
 
-Drivers with age under 30 has acceptance rate of: 73.61 %
+## Coupon type: Restaurant(&lt;20) {#coupon-type-restaurant-<20}
 
-Drivers with age above 30 has acceptance rate of: 68.32 %
+Drivers with age under 30 has acceptance rate of:  73.61 %
 
-Conclusion
+Drivers with age above 30 has acceptance rate of:  68.32 %
 
-[To achieve the highest acceptance rate for \"Restaurant(\<20)\" coupons, it\'s optimal to offer them to drivers under age 30.]{.mark}
+Conclusion 
 
-## Coupon type: Coffee House
+To achieve the highest acceptance rate for "Restaurant(&lt;20)" coupons, it's optimal to offer them to drivers under age 30.
 
-![][17]
 
-### Conclusion
+## Coupon type: Coffee House {#coupon-type-coffee-house}
 
-[To maximize the acceptance rate for \"Coffee House\" coupons, it\'s recommended to target drivers with a friend as a passenger, particularly around 7AM or 10AM or 2PM with friends. This specific scenario leads to a higher acceptance rate compared to other passenger combinations or times of the day.]{.mark}
 
-## Coupon type: Carry out & Take away
 
-![][18]
+<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-### Conclusion
 
-[To achieve the highest acceptance rate for \"Carry out & Take away\" coupons, it\'s optimal to offer them during lunch and dinner hours (2PM and 6PM).]{.mark}
+![alt_text](images/image4.png "image_tooltip")
 
-  [1]: https://github.com/deepjoshi1/berkeley_ai_ml_assignment_mod5_coupon
-  [2]: #introduction
-  [3]: #data-description
-  [4]: #analysis
-  [5]: #understanding-data
-  [6]: #coupon-types
-  [7]: #coupon-type-bar
-  [8]: #conclusion
-  [9]: #coupon-type-restaurant20
-  [10]: #coupon-type-coffee-house
-  [11]: #conclusion-1
-  [12]: #coupon-type-carry-out-take-away
-  [13]: #conclusion-2
-  [14]: media/image2.png {width="3.9198097112860895in" height="3.6614588801399823in"}
-  [15]: media/image1.png {width="3.9166666666666665in" height="3.2395833333333335in"}
-  [16]: media/image3.png {width="5.90625in" height="5.989583333333333in"}
-  [17]: media/image5.png {width="5.947916666666667in" height="4.5in"}
-  [18]: media/image4.png {width="5.90625in" height="4.770833333333333in"}
+
+
+### Conclusion {#conclusion}
+
+To maximize the acceptance rate for "Coffee House" coupons, it's recommended to target drivers with a friend as a passenger, particularly around 7AM or 10AM or 2PM with friends. This specific scenario leads to a higher acceptance rate compared to other passenger combinations or times of the day.
+
+
+## Coupon type: Carry out & Take away {#coupon-type-carry-out-&-take-away}
+
+
+
+<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image5.png "image_tooltip")
+
+
+
+### Conclusion {#conclusion}
+
+To achieve the highest acceptance rate for "Carry out & Take away" coupons, it's optimal to offer them during lunch and dinner hours (2PM and 6PM).
+
