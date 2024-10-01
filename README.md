@@ -170,8 +170,7 @@ Acceptance rate for drivers, go to bars more than once a month and are under the
 * Acceptance rate for drivers, go to bars more than once a month and are under the age of 30:  72.17%
 * Acceptance rate for drivers, go to cheap restaurants more than 4 times a month and income is less than 50K:  45.35
 
-<div id='conclusion1.1'/>
-### Conclusion
+### Conclusion <a name="conclusion1.1"></a>
 
 
 
@@ -180,25 +179,22 @@ Acceptance rate for drivers, go to bars more than once a month and are under the
 
 This hypothesis suggests that targeting ride-sharing coupons towards drivers who frequent bars, particularly those under 30 and those who are not transporting children, could result in higher acceptance and usage rates.
 
-<div id='coupon-type-restaurant-'/>
-## Coupon type: Restaurant(&lt;20)
+## Coupon type: Restaurant(&lt;20) <a name="coupon-type-restaurant-"></a>
 
 * Drivers with age under 30 has acceptance rate of:  73.61 %
 
 * Drivers with age above 30 has acceptance rate of:  68.32 %
 
-<div id='Conclusion2.1'/>
-### Conclusion
+### Conclusion <a name="Conclusion2.1"></a>
 
 To achieve the highest acceptance rate for "Restaurant(&lt;20)" coupons, it's optimal to offer them to drivers under age 30.
 
-<div id='coupon-type-coffee-house'/>
-## Coupon type: Coffee House
+## Coupon type: Coffee House <a name="coupon-type-coffee-house"></a>
 
 ![alt_text](images/image4.png "image_tooltip")
 
-<div id='conclusion3.1'/>
-### Conclusion
+
+### Conclusion <a name="conclusion3.1"></a>
 
 To maximize the acceptance rate for "Coffee House" coupons, it's recommended to target drivers with a friend as a passenger, particularly around 7AM or 10AM or 2PM with friends. This specific scenario leads to a higher acceptance rate compared to other passenger combinations or times of the day.
 
@@ -208,8 +204,8 @@ To maximize the acceptance rate for "Coffee House" coupons, it's recommended to 
 ![alt_text](images/image3.png "image_tooltip")
 
 
-<div id='conclusion4.1'/>
-### Conclusion
+### Conclusion a name="conclusion4.1"></a>
+
 
 To achieve the highest acceptance rate for "Carry out & Take away" coupons, it's optimal to offer them during lunch and dinner hours (2PM and 6PM).
 
