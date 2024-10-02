@@ -6,7 +6,6 @@ By: Deep Joshi
 Github repo: [https://github.com/deepjoshi1/berkeley_ai_ml_assignment_mod5_coupon](https://github.com/deepjoshi1/berkeley_ai_ml_assignment_mod5_coupon)
 
 
-
 * Notebook: **customer_and_coupon.ipynb**
 * Data set:  **data/coupons.csv**
 
