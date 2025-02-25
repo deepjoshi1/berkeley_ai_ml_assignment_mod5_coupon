@@ -29,9 +29,7 @@ Github repo: [https://github.com/deepjoshi1/berkeley_ai_ml_assignment_mod5_coupo
 This analysis explores whether customers will accept coupons in various driving scenarios. The study uses data from a survey conducted on Amazon Mechanical Turk, where participants were presented with different driving situations and asked if they would accept a coupon. The survey considered factors such as destination, time of day, weather, and passenger.   
 
 # Data Description <a name="data- description"></a>
-This data is from the UCI Machine Learning Repository and was collected via a survey on Amazon Mechanical Turk. The survey describes different driving scenarios, including the destination, current time, weather, and passenger, and then asks people whether
-
-they will accept the coupon if they are the driver. There are three possible answers people can choose from:
+This data is from the UCI Machine Learning Repository and was collected via a survey on Amazon Mechanical Turk. The survey describes different driving scenarios, including the destination, current time, weather, and passenger, and then asks people whether they will accept the coupon if they are the driver. There are three possible answers people can choose from:
 
 
 
