@@ -196,13 +196,12 @@ To achieve the highest acceptance rate for "Restaurant(&lt;20)" coupons, it's op
 
 To maximize the acceptance rate for "Coffee House" coupons, it's recommended to target drivers with a friend as a passenger, particularly around 7AM or 10AM or 2PM with friends. This specific scenario leads to a higher acceptance rate compared to other passenger combinations or times of the day.
 
-<div id='coupon-type-carry-out-&-take-away'/>
 ## Coupon type: Carry out & Take away
 
 ![alt_text](images/image3.png "image_tooltip")
 
 
-### Conclusion a name="conclusion4.1"></a>
+### Conclusion <a name="conclusion4.1"></a>
 
 
 To achieve the highest acceptance rate for "Carry out & Take away" coupons, it's optimal to offer them during lunch and dinner hours (2PM and 6PM).
